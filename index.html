@@ -19,47 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="style.css"
+      rel="stylesheet"
+    />
   </head>
-
-  <style>
-    body {
-      font-family: "Silkscreen", cursive;
-      background-color: #06283d;
-      color: #dff6ff;
-    }
-    .box {
-      margin-left: 25%;
-      width: 200px;
-      height: 250px;
-      background-color: #256d85;
-      margin-top: 20%;
-      border-radius: 10px;
-      text-align: center;
-      color: #dff6ff;
-    }
-
-    .content {
-      margin-left: 5%;
-      width: 350px;
-      height: 400px;
-      background-color: #DFF6FF;
-      margin-top: 20%;
-      border-radius: 10px;
-      text-align: center;
-      color: #06283d;
-    }
-
-    #greetings {
-      background-color: #47b5ff;
-    }
-    #greetings_2 {
-      background-color: #256d85;
-    }
-
-    .closing {
-      text-align: center;
-    }
-  </style>
 
   <body>
     <div class="header-box">
@@ -118,36 +82,7 @@
       <h2 class="closing mt-3">Dah ya :) lain kali lagi, semoga tambah jago</h2>
     </div>
 
-    <script>
-      $(document).ready(function () {
-        $(".content").hide();
-        var array_content = [];
-        array_content["item_1"] =
-          "Sebagai web creator, keknya cara saya berekspresi agak aneh - aneh ya, tapi btw, lanjut ke card bawahmu";
-        array_content["item_2"] =
-          "Aku tau kamu belakangan ini lagi ngadepin masa - masa yang berat yang mungkin kamu emang butuh adaptasi, butuh penyesuaian yang berat, sampe rasanya waktu buat kamu dewe aja kurang - kurang";
-        array_content["item_3"] =
-          "Karena itu, aku mau kasi penyemangat dikit dalam wujud web, biar agak flexing kalo aku anak IT :') nah di sini, aku mau nyemangatin kamu, semangat terus ya buat aktivitasmu ke depannya, jangan nyerah dulu, aku support sini, pasti bisa kok kamu";
-        array_content["item_4"] =
-          "Kamu mau ngehujat ini gapapa kok btw :') ini emang tak akui ga seberapa bagus, soalnya saya sendiri bukan designer web / bagian front-end web, saya back-end, alias yang full kodingnya :') tapi aku jadi terinspirasi buat ini pas kemarin malem kamu bilang 'kamu kok ga pernah kasi aku sesuatu ?' ya jadinya terinspirasi buat ini. Ini full self-made ya :) ga ada yang namanya template - template an :)";
-
-        $(".item_1, .item_2, .item_3, .item_4").on("click", function () {
-          if ($(this).data("show")) {
-            class_name = $(this).attr("class");
-            $(this).children("div.box").hide(500);
-            $(this)
-              .children("div.content")
-              .html(array_content[class_name])
-              .show(500);
-            $(this).data("show", false);
-          } else {
-            class_name = $(this).attr("class");
-            $(this).children("div.content").hide(500);
-            $(this).children("div.box").show(500);
-            $(this).data("show", true);
-          }
-        });
-      });
+    <script src="script.js">
     </script>
   </body>
 </html>

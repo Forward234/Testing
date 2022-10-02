@@ -1,0 +1,38 @@
+
+body {
+    font-family: "Silkscreen", cursive;
+    background-color: #06283d;
+    color: #dff6ff;
+}
+.box {
+    margin-left: 25%;
+    width: 200px;
+    height: 250px;
+    background-color: #256d85;
+    margin-top: 20%;
+    border-radius: 10px;
+    text-align: center;
+    color: #dff6ff;
+}
+
+.content {
+    margin-left: 5%;
+    width: 350px;
+    height: 400px;
+    background-color: #DFF6FF;
+    margin-top: 20%;
+    border-radius: 10px;
+    text-align: center;
+    color: #06283d;
+}
+
+#greetings {
+    background-color: #47b5ff;
+}
+#greetings_2 {
+    background-color: #256d85;
+}
+
+.closing {
+    text-align: center;
+}
